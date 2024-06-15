@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(32, 34, 37, 1), transparent),
+    radial-gradient(circle at top right, rgba(32, 34, 37, 1), transparent),
+    radial-gradient(circle at bottom left, rgba(32, 34, 37, 1), transparent),
+    radial-gradient(circle at bottom right, rgba(32, 34, 37, 1), transparent);
+    background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.grid-pattern::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(32, 34, 37, 1), rgba(32, 34, 37, 0)),
+    linear-gradient(to left, rgba(32, 34, 37, 1), rgba(32, 34, 37, 0));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate(0.0deg)
+    }
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+

@@ -201,3 +201,8 @@ tests/e2e/.env
 # Strapi
 ############################
 examples/**/types/generated
+.env
+license.txt
+exports
+*.cache
+.strapi-updater.json
