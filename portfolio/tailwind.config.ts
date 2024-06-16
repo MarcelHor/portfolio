@@ -18,7 +18,7 @@ const config: Config = {
                     "primary": "#f97417",
                     'primary-content': '#ffffff',
                     "secondary": "#26C485",
-                    "accent": "#7E78D2",
+                    "accent": "#9891e3",
                     'base-content': '#ffffff',
                 },
             },

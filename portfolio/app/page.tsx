@@ -11,13 +11,16 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-start lg:w-2/3">
                     <p className="text-2xl"> Hi there! <span className="wave text-3xl">👋</span></p>
                     <h1 className="text-6xl font-bold mt-2">I&apos;m Marcel Horváth</h1>
-                    <p className="text-lg mt-4 font-thin">
-                        Need assistance with your project? <span className="font-bold">
+                    <p className="text-lg mt-4 font-thin leading-8">
+                        <span className={"font-bold text-accent"}>Software engineer</span> with a passion for web development.
+                        <br/> Need assistance with your project? <span
+                        className="font-bold">
                         Let&apos;s talk!</span>
                     </p>
                     <div className="flex justify-center space-x-4 mt-8">
                         <button className="btn btn-primary">Contact me <FontAwesomeIcon icon={faChevronRight}/></button>
-                        <button className="btn btn-secondary btn-outline">See my CV <FontAwesomeIcon icon={faChevronRight}/></button>
+                        <button className="btn btn-secondary btn-outline">See my CV <FontAwesomeIcon
+                            icon={faChevronRight}/></button>
                     </div>
                     <div className="flex justify-center mt-8 space-x-2">
                         <a href="#" className="btn btn-ghost btn-circle">
