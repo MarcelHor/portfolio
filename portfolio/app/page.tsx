@@ -9,10 +9,6 @@ export default function Home() {
             <div className="absolute inset-0 grid-pattern"></div>
             <div className="relative z-10 flex flex-col lg:flex-row text-white justify-between items-center w-2/3">
                 <div className="flex flex-col justify-center items-start lg:w-2/3">
-                    <div className="flex space-x-2 mb-4">
-                        <div className={"badge badge-outline badge-accent"}>Software Engineer</div>
-                        <div className={"badge badge-outline badge-accent"}>Web Developer</div>
-                    </div>
                     <p className="text-2xl"> Hi there! <span className="wave text-3xl">👋</span></p>
                     <h1 className="text-6xl font-bold mt-2">I&apos;m Marcel Horváth</h1>
                     <p className="text-lg mt-4 font-thin">
@@ -23,7 +19,7 @@ export default function Home() {
                         <button className="btn btn-primary">Contact me <FontAwesomeIcon icon={faChevronRight}/></button>
                         <button className="btn btn-secondary btn-outline">See my CV <FontAwesomeIcon icon={faChevronRight}/></button>
                     </div>
-                    <div className="flex justify-center mt-8 space-x-4">
+                    <div className="flex justify-center mt-8 space-x-2">
                         <a href="#" className="btn btn-ghost btn-circle">
                             <FontAwesomeIcon size="2x" icon={faGithub}/>
                         </a>

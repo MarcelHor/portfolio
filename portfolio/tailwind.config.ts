@@ -15,9 +15,11 @@ const config: Config = {
                 mytheme: {
                     "base-100": "#202225",
                     "base-200": "#2f3136",
-                    "primary": "#FAA916",
+                    "primary": "#f97417",
+                    'primary-content': '#ffffff',
                     "secondary": "#26C485",
                     "accent": "#7E78D2",
+                    'base-content': '#ffffff',
                 },
             },
         ],
