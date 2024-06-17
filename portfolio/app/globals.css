@@ -7,15 +7,18 @@
     background-repeat: repeat;
     background-size: 70%;
     filter: invert(16%) sepia(7%) saturate(359%) hue-rotate(169deg) brightness(95%) contrast(98%);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-size: 100% 100%;
 }
 
 .grid-light {
     background-image: url('../public/grid-light.png');
     background-repeat: repeat;
     background-size: 70%;
-    opacity: 0.5;
     z-index: 2;
+    filter: brightness(0.5);
     mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70%);
     mask-size: 250px 250px;
     mask-repeat: no-repeat;
+    transition: opacity 0.5s;
 }
