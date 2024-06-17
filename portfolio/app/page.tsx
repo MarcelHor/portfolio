@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <section
-                className="relative flex flex-col items-center justify-center h-[calc(100vh-4rem)] w-full">
+                className="relative flex flex-col items-center justify-center h-[calc(100vh-4rem)] w-full border-b-2 border-opacity-5 border-white">
                 <Grid/>
                 <div className="relative z-10 flex flex-col lg:flex-row text-white justify-between items-center">
                     <div className="flex flex-col justify-center items-start lg:w-2/3">
