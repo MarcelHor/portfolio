@@ -18,8 +18,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         </head>
         <body className={inter.className}>
         <Header/>
-        <main
-            className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] bg-gradient-to-t from-base-200 to-base-100">
+        <main>
             {children}
         </main>
         </body>
