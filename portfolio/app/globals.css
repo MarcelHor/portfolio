@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.grid-pattern {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-    radial-gradient(circle at top left, rgba(32, 34, 37, 1), transparent),
-    radial-gradient(circle at top right, rgba(32, 34, 37, 1), transparent),
-    radial-gradient(circle at bottom left, rgba(32, 34, 37, 1), transparent),
-    radial-gradient(circle at bottom right, rgba(32, 34, 37, 1), transparent);
-    background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.grid-pattern::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to right, rgba(32, 34, 37, 1), rgba(32, 34, 37, 0)),
-    linear-gradient(to left, rgba(32, 34, 37, 1), rgba(32, 34, 37, 0));
-    pointer-events: none;
-    z-index: 1;
-}
-
 .wave {
     animation-name: wave-animation;
     animation-duration: 2.5s;
@@ -65,4 +36,35 @@
         transform: rotate(0.0deg)
     }
 }
+/* Grid.css */
+.background-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image.dark {
+    background-image: url('/grid.png');
+    z-index: 0;
+}
+
+.image.light {
+    background-image: url('/grid-white.png');
+    z-index: 1;
+    opacity: 0.7;
+
+}
+
 
