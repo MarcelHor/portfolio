@@ -5,7 +5,11 @@
 html,
 body {
     cursor: none;
+    scroll-behavior: smooth;
+}
 
+button, a {
+    cursor: none !important;
 }
 
 .grid-dark {
@@ -27,4 +31,23 @@ body {
     mask-size: 250px 250px;
     mask-repeat: no-repeat;
     transition: opacity 0.5s;
+}
+
+.custom-cursor, .trailing-cursor {
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    html, body {
+        cursor: default;
+    }
+
+    .custom-cursor, .trailing-cursor {
+        display: none;
+    }
+
+    a, button {
+        cursor: pointer !important;
+    }
 }

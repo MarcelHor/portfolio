@@ -5,6 +5,7 @@ const CustomCursor = () => {
     const [position, setPosition] = useState({x: 0, y: 0});
     const [trailingPosition, setTrailingPosition] = useState({x: 0, y: 0});
     const [isHovered, setIsHovered] = useState(false);
+    const [firstMove, setFirstMove] = useState(false); // State pro sledování, zda uživatel provedl pohyb myší
 
     useEffect(() => {
         const setFromEvent = (event: MouseEvent) => {
@@ -12,6 +13,9 @@ const CustomCursor = () => {
             const scrollX = window.scrollX || window.pageXOffset;
             const scrollY = window.scrollY || window.pageYOffset;
             setPosition({x: clientX + scrollX, y: clientY + scrollY});
+            if (!firstMove) {
+                setFirstMove(true);
+            }
         };
 
         document.addEventListener('mousemove', setFromEvent);
@@ -21,7 +25,7 @@ const CustomCursor = () => {
         };
     }, []);
 
-    // TODO: Check performance, use transition?
+    // TODO: use transition?
     useLayoutEffect(() => {
         let animationFrameId: number;
 
@@ -63,20 +67,23 @@ const CustomCursor = () => {
 
     return (
         <>
-            <div
-                className="w-4 h-4 rounded-full border-2 border-white shadow-md pointer-events-none z-50 absolute transform -translate-x-1/2 -translate-y-1/2"
-                style={{left: `${position.x}px`, top: `${position.y}px`}}
-            />
-            <div
-                className={`w-4 h-4 rounded-full border-2 border-white shadow-md pointer-events-none z-50 absolute transform -translate-x-1/2 -translate-y-1/2 ${
-                    isHovered ? 'scale-150' : ''
-                }`}
-                style={{
-                    left: `${trailingPosition.x}px`,
-                    top: `${trailingPosition.y}px`,
-                    transition: 'transform 0.1s ease-out',
-                }}
-            />
+            {firstMove && (
+                <>
+                    <div
+                        className="custom-cursor w-4 h-4 rounded-full border-2 border-white shadow-md pointer-events-none z-50 absolute transform -translate-x-1/2 -translate-y-1/2"
+                        style={{left: `${position.x}px`, top: `${position.y}px`}}
+                    />
+                    <div
+                        className={`trailing-cursor w-4 h-4 rounded-full border-2 border-white shadow-md pointer-events-none z-50 absolute transform -translate-x-1/2 -translate-y-1/2 ${
+                            isHovered ? 'scale-150' : ''
+                        }`}
+                        style={{
+                            left: `${trailingPosition.x}px`,
+                            top: `${trailingPosition.y}px`,
+                            transition: 'transform 0.1s ease-out',
+                        }}
+                    />
+                </>)}
         </>
     );
 };

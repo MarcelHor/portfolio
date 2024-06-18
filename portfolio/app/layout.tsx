@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import CustomCursor from "@/components/CustomCursor";
 
 config.autoAddCss = false;
 
@@ -17,6 +18,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
         </head>
         <body className={inter.className}>
+        <CustomCursor/>
         <Header/>
         <main>
             {children}
