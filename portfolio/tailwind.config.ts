@@ -14,7 +14,7 @@ const config: Config = {
             {
                 mytheme: {
                     "base-100": "#202225",
-                    "base-200": "#2f3136",
+                    "base-200": "#1d1d21",
                     "primary": "#f97417",
                     'primary-content': '#ffffff',
                     "secondary": "#26C485",

@@ -20,7 +20,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         <body className={inter.className}>
         <CustomCursor/>
         <Header/>
-        <main>
+        <main className={"w-full flex flex-col items-center justify-center"}>
             {children}
         </main>
         </body>

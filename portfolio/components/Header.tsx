@@ -13,7 +13,7 @@ export default function Header() {
                     </div>
 
                     <ul tabIndex={0}
-                        className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-md rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Projects</a></li>
