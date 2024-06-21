@@ -8,8 +8,8 @@ export default function LandingPage() {
         <section
             className="relative flex flex-col items-center justify-center h-[calc(100vh-4rem)] w-full border-b-2 border-opacity-5 border-white">
             <Grid/>
-            <div className="relative z-10 flex flex-col lg:flex-row text-white justify-between items-center">
-                <div className="flex flex-col justify-center items-start lg:w-2/3">
+            <div className="relative z-10 flex flex-col lg:flex-row text-white justify-between items-center w-2/3">
+                <div className="flex flex-col justify-center items-start">
                     <p className="text-2xl"> Hi there!</p>
                     <h1 className="text-6xl font-bold mt-2">I&apos;m Marcel Horváth</h1>
                     <p className="text-lg mt-4 font-thin leading-8">
