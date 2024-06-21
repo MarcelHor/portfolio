@@ -17,7 +17,6 @@ export default function Home() {
             <Work/>
             <Technologies/>
             <Projects/>
-            <Contact/>
         </>
     );
 }
