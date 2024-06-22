@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
     return (
-        <section className="w-2/3 flex flex-col mx-auto space-y-4">
-            <h2 className="xl:text-5xl text-3xl font-bold uppercase">
+        <section className="flex flex-col space-y-4">
+            <h2 className="md:text-5xl text-4xl mb-8 font-bold uppercase">
                 Learn About <span className="text-primary drop-shadow-xl">My journey</span>
             </h2>
 

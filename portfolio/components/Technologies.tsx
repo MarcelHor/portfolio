@@ -24,9 +24,9 @@ const responsive = {
 export default function Technologies() {
     return (
         <section className="w-full flex flex-col justify-center items-center space-y-8 my-32">
-            <h1 className="text-5xl font-bold text-center uppercase"><span
+            <h2 className="md:text-5xl text-4xl font-bold text-center uppercase"><span
                 className={"text-primary"}>Technologies</span> I work with on a <span className={"text-secondary"}>daily basis</span>
-            </h1>
+            </h2>
             <p className="text-center text-lg">
 
             </p>

@@ -35,8 +35,8 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="w-2/3 ">
-            <h1 className="text-3xl font-bold">Projects</h1>
+        <section className="">
+            <h2 className="md:text-5xl text-4xl font-bold">Projects</h2>
             <div className="grid grid-cols-3 gap-4 ">
                 {projects.map((project, index) => (
                     <div key={index} className="flex flex-col items-center justify-center">
@@ -45,6 +45,6 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

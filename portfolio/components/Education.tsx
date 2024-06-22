@@ -20,17 +20,17 @@ const EducationContent = [
 
 export default function Education() {
     return (
-        <section className=" w-2/3 my-32">
-            <h2 className="text-5xl uppercase font-bold mb-6 text-primary">My Education</h2>
-            <div className={"flex flex-row items-center justify-between"}>
-                <div className="flex flex-col w-1/2">
-                    <div className="flex flex-col space-y-8">
+        <section>
+            <h2 className="md:text-5xl text-4xl uppercase font-bold mb-6 text-primary">My Education</h2>
+            <div className={"flex flex-col md:flex-row items-center justify-between space-x-0 space-y-8 md:space-y-8 md:space-x-8"}>
+                <div className="flex flex-col md:w-1/2">
+                    <div className="flex flex-col space-y-16">
                         {EducationContent.map((education, index) => (
                             <EducationItem key={index} {...education} />
                         ))}
                     </div>
                 </div>
-                <figure className="w-1/2 flex flex-col items-center">
+                <figure className="md:w-1/2 flex flex-col items-center">
                     <img
                         src="https://www.tul.cz/wp-content/uploads/2021/03/Sni%CC%81mek-obrazovky-2021-03-24-v-18.36.37-1024x676.png"
                         alt="University of Liberec" width="450px"
@@ -46,10 +46,10 @@ export default function Education() {
 
 function EducationItem({year, institution, details}: { year: string, institution: string, details: string }) {
     return (
-        <div className="flex flex-col border-l-4 border-white border-opacity-5 pl-4">
-            <p className="text-lg font-semibold text-secondary">{year}</p>
-                <p className="text-lg">{institution}</p>
-                <p className="text-gray-400">{details}</p>
+        <div className="flex flex-col border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-200 hover:scale-105">
+            <p className="text-xl font-bold text-secondary">{year}</p>
+                <p className="text-xl font-bold">{institution}</p>
+                <p className="text-lg text-gray-400">{details}</p>
         </div>
     );
 }
