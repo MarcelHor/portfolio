@@ -11,12 +11,12 @@ export default function Home() {
     return (
         <>
             <LandingPage/>
-            <div className=" max-w-7xl p-4 space-y-24 my-32">
+            <div className="w-full xl:max-w-7xl p-4 space-y-24 my-32">
                 <Services/>
                 <About/>
                 <Work/>
                 <Education/>
-                {/*<Technologies/>*/}
+                <Technologies/>
                 {/*<Projects/>*/}
             </div>
         </>

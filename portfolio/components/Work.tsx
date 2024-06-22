@@ -24,7 +24,7 @@ const WorkContent = [
 export default function Work() {
     return (
         <section>
-            <h2 className="md:text-5xl text-4xl uppercase font-bold mb-12 text-primary">Work Experience</h2>
+            <h2 className="md:text-5xl text-4xl uppercase font-bold mb-8 text-primary">Work Experience</h2>
             <div className="space-y-16">
                 {WorkContent.map((work, index) => (
                     <WorkItem key={index} {...work} />

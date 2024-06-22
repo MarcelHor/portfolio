@@ -21,8 +21,8 @@ const EducationContent = [
 export default function Education() {
     return (
         <section>
-            <h2 className="md:text-5xl text-4xl uppercase font-bold mb-6 text-primary">My Education</h2>
-            <div className={"flex flex-col md:flex-row items-center justify-between space-x-0 space-y-8 md:space-y-8 md:space-x-8"}>
+            <h2 className="md:text-5xl text-4xl uppercase font-bold mb-8 text-primary">My Education</h2>
+            <div className={"flex flex-col md:flex-row md:items-center md:justify-between space-x-0 space-y-16 md:space-y-8 md:space-x-8"}>
                 <div className="flex flex-col md:w-1/2">
                     <div className="flex flex-col space-y-16">
                         {EducationContent.map((education, index) => (

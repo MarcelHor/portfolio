@@ -1,8 +1,10 @@
 "use client"
+
 import Carousel from "react-multi-carousel";
+import { ResponsiveType } from "react-multi-carousel/lib/types";
 import "react-multi-carousel/lib/styles.css";
 
-const responsive = {
+const responsive : ResponsiveType = {
     superLargeDesktop: {
         breakpoint: {max: 4000, min: 3000},
         items: 5
@@ -23,18 +25,14 @@ const responsive = {
 
 export default function Technologies() {
     return (
-        <section className="w-full flex flex-col justify-center items-center space-y-8 my-32">
-            <h2 className="md:text-5xl text-4xl font-bold text-center uppercase"><span
-                className={"text-primary"}>Technologies</span> I work with on a <span className={"text-secondary"}>daily basis</span>
+        <section className="w-full flex flex-col justify-center items-center overflow-hidden">
+            <h2 className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
+                <span className="text-primary">Technologies</span> I work with on a <span className="text-secondary">daily basis</span>
             </h2>
-            <p className="text-center text-lg">
-
-            </p>
             <div className="w-full">
                 <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}
                           arrows={false} showDots={false} draggable={false} swipeable={false}
-                          keyBoardControl={false}
-                          className={"w-full"}>
+                          keyBoardControl={false}>
                     <div className="flex flex-col justify-center items-center space-y-2">
                         <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python"/>
                         <span className="text-xs font-bold">Python</span>
@@ -102,4 +100,3 @@ export default function Technologies() {
         </section>
     )
 }
-
