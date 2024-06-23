@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import CustomCursor from "@/components/CustomCursor";
+import Footer from "@/components/Footer";
 
 config.autoAddCss = false;
 
@@ -24,6 +25,7 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
         <main className={"w-full flex flex-col items-center justify-center"}>
             {children}
         </main>
+        <Footer/>
         </body>
         </html>
     );
