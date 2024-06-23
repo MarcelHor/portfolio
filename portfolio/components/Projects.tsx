@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="w-full flex flex-col items-center justify-center">
+        <section className="w-full flex flex-col items-center justify-center scroll-m-28" id={"projects"}>
             <h2 className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
                 <span className="text-primary">Projects</span> I worked on
             </h2>

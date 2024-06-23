@@ -37,7 +37,7 @@ const ServiceCard = ({icon, title, description}: { icon: any, title: string, des
 
 export default function Services() {
     return (
-        <section className="flex flex-col items-center justify-center">
+        <section className="flex flex-col items-center justify-center scroll-m-32" id={"about"}>
             <h2 className="md:text-5xl text-4xl mb-8 font-bold uppercase">How I Can <span
                 className="text-primary">Support</span> Your Success ?</h2>
             <div

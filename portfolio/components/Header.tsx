@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
     return (
         <header
@@ -14,24 +16,24 @@ export default function Header() {
 
                     <ul tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-200 mt-3 z-50 p-2 shadow-md rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Contact</a></li>
+                        <li><Link href={"#home"}>Home</Link></li>
+                        <li><Link href={"#about"}>About</Link></li>
+                        <li><Link href={"#projects"}>Projects</Link></li>
+                        <li><Link href={"#contact"} className="btn btn-primary btn-sm">Contact</Link></li>
                     </ul>
                 </div>
 
-                <a className="btn btn-ghost text-xl">Marcel Horváth</a>
+                <Link href={"/"} className="btn btn-ghost text-xl">Marcel Horváth</Link>
             </div>
 
-            <div className="navbar-end hidden md:flex">
+            <nav className="navbar-end hidden md:flex">
                 <ul className="menu menu-horizontal flex items-center space-x-2">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Projects</a></li>
-                    <button className="btn btn-primary btn-sm">Contact</button>
+                    <li><Link href={"#home"}>Home</Link></li>
+                    <li><Link href={"#about"}>About</Link></li>
+                    <li><Link href={"#projects"}>Projects</Link></li>
+                    <li><Link href={"#contact"} className="btn btn-primary btn-sm">Contact</Link></li>
                 </ul>
-            </div>
+            </nav>
         </header>
     );
 }
