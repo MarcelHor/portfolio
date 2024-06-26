@@ -1,8 +1,9 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import ContactForm from "@/components/ContactForm";
 
-const ContactForm = () => {
+export default function Contact() {
     return (
         <section className="flex flex-col items-center justify-center w-full h-full scroll-my-24" id={"contact"}>
             <h2 className="md:text-5xl text-4xl font-bold text-center uppercase mb-8 text-primary">Contact Me</h2>
@@ -14,17 +15,7 @@ const ContactForm = () => {
 
             <div
                 className="flex flex-col md:flex-row justify-between space-x-0 md:space-x-32 w-full h-full space-y-10 md:space-y-0">
-
-                <form className="form-control flex flex-col w-full md:w-1/2 mx-auto space-y-4">
-                    <h3 className={"text-2xl uppercase text-secondary font-bold"}>Contact form</h3>
-                    <input type="text" placeholder="Name"
-                           className="input input-bordered"/>
-                    <input type="text" placeholder="Email"
-                           className="input input-bordered"/>
-                    <textarea placeholder="Message"
-                              className="textarea textarea-bordered h-32"/>
-                    <button type="submit" className="btn btn-primary">Send</button>
-                </form>
+                <ContactForm/>
 
                 <div className="flex flex-col w-full md:w-1/2 mx-auto space-y-8">
                     <div className={"text-lg flex flex-col w-full"}>
@@ -39,10 +30,10 @@ const ContactForm = () => {
                         <h3 className={"text-2xl uppercase text-secondary font-bold mb-2"}>Socials</h3>
                         <div className={"flex flex-row space-x-2 w-full"}>
                             <a href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
-                                <FontAwesomeIcon size="2x" icon={faGithub} />
+                                <FontAwesomeIcon size="2x" icon={faGithub}/>
                             </a>
                             <a href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
-                                <FontAwesomeIcon size="2x" icon={faLinkedin} />
+                                <FontAwesomeIcon size="2x" icon={faLinkedin}/>
                             </a>
                         </div>
                     </div>
@@ -52,4 +43,3 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
