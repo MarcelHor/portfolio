@@ -1,10 +1,11 @@
 "use client"
 
 import Carousel from "react-multi-carousel";
-import { ResponsiveType } from "react-multi-carousel/lib/types";
+import {ResponsiveType} from "react-multi-carousel/lib/types";
 import "react-multi-carousel/lib/styles.css";
+import FadeIn from "@/components/FadeIn";
 
-const responsive : ResponsiveType = {
+const responsive: ResponsiveType = {
     superLargeDesktop: {
         breakpoint: {max: 4000, min: 3000},
         items: 5
@@ -26,10 +27,11 @@ const responsive : ResponsiveType = {
 export default function Technologies() {
     return (
         <section className="w-full flex flex-col justify-center items-center overflow-hidden">
-            <h2 className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
-                <span className="text-primary">Technologies</span> I work with on a <span className="text-secondary">daily basis</span>
-            </h2>
-            <div className="w-full">
+            <FadeIn as={"h2"} className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
+                    <span className="text-primary">Technologies</span> I work with on a <span
+                    className="text-secondary">daily basis</span>
+            </FadeIn>
+            <FadeIn className="w-full" delay={0.1}>
                 <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}
                           arrows={false} showDots={false} draggable={false} swipeable={false}
                           keyBoardControl={false}>
@@ -96,7 +98,7 @@ export default function Technologies() {
                         <span className="text-xs font-bold">Photoshop</span>
                     </div>
                 </Carousel>
-            </div>
+            </FadeIn>
         </section>
     )
 }

@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <>
             <LandingPage/>
-            <div className="w-full xl:max-w-7xl p-4 space-y-64 my-64">
+            <div className="w-full xl:max-w-7xl p-4 space-y-40 my-40">
                 <Services/>
                 <About/>
                 <Work/>

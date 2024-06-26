@@ -2,22 +2,28 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faBriefcase} from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "@/components/ContactForm";
+import FadeIn from "@/components/FadeIn";
 
 export default function Contact() {
     return (
         <section className="flex flex-col items-center justify-center w-full h-full scroll-my-24" id={"contact"}>
-            <h2 className="md:text-5xl text-4xl font-bold text-center uppercase mb-8 text-primary">Contact Me</h2>
-            <p className={"text-xl text-center mb-16"}>
-                I&apos;m here to help! If you have any questions, comments, or just want to say hi, feel free to reach
-                out.
-                I&apos;ll get back to you as soon as possible.
-            </p>
+            <FadeIn as={"h2"} className="md:text-5xl text-4xl font-bold text-center uppercase mb-8 text-primary">Contact
+                Me
+            </FadeIn>
+            <FadeIn as={"p"} delay={0.1} className={"text-xl text-center mb-16"}>
+                    I&apos;m here to help! If you have any questions, comments, or just want to say hi, feel free to
+                    reach
+                    out.
+                    I&apos;ll get back to you as soon as possible.
+            </FadeIn>
 
             <div
                 className="flex flex-col md:flex-row justify-between space-x-0 md:space-x-32 w-full h-full space-y-10 md:space-y-0">
-                <ContactForm/>
+                <FadeIn delay={0.2} className="w-full md:w-1/2" direction={"right"}>
+                    <ContactForm/>
+                </FadeIn>
 
-                <div className="flex flex-col w-full md:w-1/2 mx-auto space-y-8">
+                <FadeIn delay={0.2} direction={"left"} className="flex flex-col w-full md:w-1/2 mx-auto space-y-8">
                     <div className={"text-lg flex flex-col w-full"}>
                         <h3 className={"text-2xl uppercase text-secondary font-bold mb-2"}>Contact info</h3>
                         <div className={"flex flex-col space-y-2 w-full"}>
@@ -37,7 +43,7 @@ export default function Contact() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </FadeIn>
             </div>
         </section>
     );

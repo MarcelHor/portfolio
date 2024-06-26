@@ -1,11 +1,13 @@
+import FadeIn from "@/components/FadeIn";
+
 export default function About() {
     return (
         <section className="flex flex-col">
-            <h2 className="md:text-5xl text-4xl mb-8 font-bold uppercase">
+            <FadeIn as={"h2"} className="md:text-5xl text-4xl mb-8 font-bold uppercase">
                 Learn About <span className="text-primary drop-shadow-xl">My journey</span>
-            </h2>
+            </FadeIn>
 
-            <div className={"space-y-4"}>
+            <FadeIn className={"space-y-4"} delay={0.1}>
                 <p>
                     Hi, my name is Marcel Horváth. I am from the Czech Republic, specifically from the city of Ústí
                     nad Labem.
@@ -18,7 +20,7 @@ export default function About() {
                 <p>
                     Programming is not only a job for me but also a hobby. I love creating websites and applications
                     the most, but I can do much more and I am able to learn new things quickly.
-                </p></div>
+                </p></FadeIn>
         </section>
     );
 }

@@ -36,7 +36,7 @@ export default function ContactForm() {
     }
 
     return (
-        <form className="form-control flex flex-col w-full md:w-1/2 mx-auto space-y-4" onSubmit={handleSubmit}
+        <form className="form-control flex flex-col w-full mx-auto space-y-4" onSubmit={handleSubmit}
               ref={formRef}>
             <h3 className="text-2xl uppercase text-secondary font-bold">Contact form</h3>
             <input type="text" placeholder="Name" name="name" className="input input-bordered" minLength={3}
