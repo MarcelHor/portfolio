@@ -6,8 +6,10 @@ import Link from "next/link";
 import Image from "next/image"
 import me from "@/public/me.png"
 import FadeIn from "@/components/FadeIn";
+import {useTranslations} from 'next-intl';
 
 export default function LandingPage() {
+    const t = useTranslations();
     return (
         <section
             className="relative flex flex-col items-center justify-center h-[calc(100vh-4rem)] w-full border-b-2 border-opacity-5 border-white scroll-my-96"
@@ -16,6 +18,7 @@ export default function LandingPage() {
             <div className="z-10 flex flex-col md:flex-row justify-between items-center p-4 w-full max-w-7xl mx-auto">
                 <div
                     className="flex flex-col justify-center items-start lg:w-1/2 p-4">
+                    <span>{t('Index.title')}</span>
                     <FadeIn as={"p"} delay={0} className="text-2xl">Hi there!</FadeIn>
                     <FadeIn as={"h1"} delay={0.1} className="text-4xl md:text-6xl font-bold mt-2">I&apos;m Marcel
                         Horváth</FadeIn>
