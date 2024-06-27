@@ -4,16 +4,17 @@
 
 html,
 body {
-    cursor: none;
+    cursor: none !important;
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
-button, a {
+button, a, span, div, input, textarea {
     cursor: none !important;
 }
 
 .grid-dark {
-    background-image: url('../../public/grid-dark.png');
+    background-image: url('../public/grid-dark.png');
     background-repeat: repeat;
     background-size: 70%;
     filter: invert(16%) sepia(7%) saturate(359%) hue-rotate(169deg) brightness(95%) contrast(98%);
@@ -22,7 +23,7 @@ button, a {
 }
 
 .grid-light {
-    background-image: url('../../public/grid-light.png');
+    background-image: url('../public/grid-light.png');
     background-repeat: repeat;
     background-size: 70%;
     z-index: 2;

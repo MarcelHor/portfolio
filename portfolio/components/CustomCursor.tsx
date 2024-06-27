@@ -52,7 +52,7 @@ const CustomCursor = () => {
     };
 
     useEffect(() => {
-        document.querySelectorAll('button, a').forEach((el) => {
+        document.querySelectorAll('button, a, .mouse-hover, input, textarea').forEach((el) => {
             el.addEventListener('mouseenter', handleHover);
             el.addEventListener('mouseleave', handleLeave);
         });

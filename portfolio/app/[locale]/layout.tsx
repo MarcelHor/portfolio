@@ -7,7 +7,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import "./globals.css";
+import "../globals.css";
 
 config.autoAddCss = false;
 const inter = Nunito({subsets: ['latin'], weight: '400'});

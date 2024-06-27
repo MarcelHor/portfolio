@@ -45,7 +45,7 @@ export default function Projects() {
                     <FadeIn
                         delay={(index + 1) * 0.1}
                         key={index}
-                        className={`relative group overflow-hidden ${index === 0 ? 'lg:row-span-2' : ''}`}
+                        className={`mouse-hover relative group overflow-hidden ${index === 0 ? 'lg:row-span-2' : ''}`}
                     >
                         <Image src={project.image} alt={project.title}
                                className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110 rounded"/>

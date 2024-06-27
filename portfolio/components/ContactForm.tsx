@@ -50,18 +50,21 @@ export default function ContactForm() {
             <button type="submit" className="btn btn-primary">
                 {formStatus === "loading" ? <span className="loading loading-spinner"/> : "Send"}
             </button>
-            {formStatus === "success" && (
-                <div role="alert" className="alert alert-success">
-                    <FontAwesomeIcon icon={faCheckCircle} className="mr-2"/>
-                    Message sent successfully!
-                </div>
-            )}
-            {formStatus === "error" && (
-                <div role="alert" className="alert alert-error">
-                    <FontAwesomeIcon icon={faExclamationCircle} className="mr-2"/>
-                    Failed to send message. Please try again later.
-                </div>
-            )}
+            <div className="w-full flex flex-col min-h-14 items-center justify-center">
+                {formStatus === "success" &&
+                    <div role="alert" className="alert alert-success h-14 text-white flex items-center">
+                        <FontAwesomeIcon icon={faCheckCircle} className="mr-2"/>
+                        Message sent successfully!
+                    </div>
+                }
+
+                {formStatus === "error" &&
+                    <div role="alert" className="alert alert-error h-14 flex items-center text-white">
+                        <FontAwesomeIcon icon={faExclamationCircle} className="mr-2"/>
+                        Error sending message! Please try again.
+                    </div>
+                }
+            </div>
         </form>
     );
 }

@@ -23,6 +23,9 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
+            <div>
+                <span>Icons made by <a href="https://icons8.com">Icons8</a></span>
+            </div>
         </footer>
     )
 }

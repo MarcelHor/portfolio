@@ -22,7 +22,7 @@ const EducationContent = [
 function EducationItem({year, institution, details}: { year: string, institution: string, details: string }) {
     return (
         <div
-            className="flex flex-col border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-200 hover:scale-105">
+            className="flex mouse-hover flex-col border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-200 hover:scale-105">
             <p className="text-xl font-bold text-secondary">{year}</p>
             <p className="text-xl font-bold">{institution}</p>
             <p className="text-lg text-gray-400">{details}</p>

@@ -30,7 +30,7 @@ function WorkItem({year, position, company, details}: {
 }) {
     return (
         <div
-            className="flex flex-col border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-300 hover:scale-105">
+            className="flex flex-col mouse-hover border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-300 hover:scale-105">
             <p className="text-xl text-secondary font-bold">{year}</p>
             <p className="text-xl font-bold">{company} - {position}</p>
             <p></p>

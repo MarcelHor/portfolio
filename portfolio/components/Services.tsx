@@ -41,7 +41,7 @@ const ServiceCard = ({icon, title, description}: {
 export default function Services() {
     return (
         <section className="flex flex-col items-center justify-center scroll-m-32" id={"about"}>
-            <FadeIn as={"h2"} className="md:text-5xl text-4xl mb-8 font-bold uppercase">How I Can <span
+            <FadeIn as={"h2"} className="md:text-5xl text-4xl mb-8 font-bold uppercase text-center">How I Can <span
                     className="text-primary">Support</span> Your Success ?
             </FadeIn>
             <div
@@ -49,7 +49,7 @@ export default function Services() {
                 {services.map((service, index) => (
                     <FadeIn key={index} delay={(index + 1) * 0.1} className={"w-full md:w-1/3 h-80"}>
                         <div
-                            className="relative rounded-lg shadow-md border-2 text-center border-white border-opacity-5 w-full h-full px-6 pt-8 pb-24 transform transition-transform duration-300 hover:scale-105">
+                            className="relative mouse-hover rounded-lg shadow-md border-2 text-center border-white border-opacity-5 w-full h-full px-6 pt-8 pb-24 transform transition-transform duration-300 hover:scale-105">
                             <ServiceCard key={index} {...service} />
                         </div>
                     </FadeIn>
