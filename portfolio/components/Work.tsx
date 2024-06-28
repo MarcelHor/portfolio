@@ -1,48 +1,38 @@
 import React from "react";
 import FadeIn from "@/components/FadeIn";
+import {useTranslations} from "next-intl";
+import WorkItem from "@/components/WorkItem";
 
 const WorkContent = [
     {
-        year: "2024 – PRESENT",
-        position: "Freelancer",
-        company: "Self-employed",
-        details: "Working remotely on various projects."
+        year: "items.0.year",
+        position: "items.0.position",
+        company: "items.0.company",
+        details: "items.0.details"
     },
     {
-        year: "2023 – 2024",
-        position: "Web Developer",
-        company: "TriInfo s.r.o.",
-        details: "Developing and maintaining websites. Migrating from Vue 2 to Vue 3."
+        year: "items.1.year",
+        position: "items.1.position",
+        company: "items.1.company",
+        details: "items.1.details"
     },
     {
-        year: "2017 – 2020",
-        position: "Researcher",
-        company: "Valeo",
-        details: "Contributed to the development of autonomous vehicles. Worked with internal programs, data analysis, and teamwork."
+        year: "items.2.year",
+        position: "items.2.position",
+        company: "items.2.company",
+        details: "items.2.details"
     }
 ];
 
-function WorkItem({year, position, company, details}: {
-    year: string
-    position: string,
-    company: string,
-    details: string
-}) {
-    return (
-        <div
-            className="flex flex-col mouse-hover border-l-4 border-white border-opacity-5 pl-4 transform transition-transform duration-300 hover:scale-105">
-            <p className="text-xl text-secondary font-bold">{year}</p>
-            <p className="text-xl font-bold">{company} - {position}</p>
-            <p></p>
-            <p className="text-lg text-gray-400">{details}</p>
-        </div>
-    );
-}
+
 
 export default function Work() {
+    const t = useTranslations('work');
+
     return (
         <section>
-            <FadeIn as={"h2"} className="md:text-5xl text-4xl uppercase font-bold mb-8 text-primary">Work Experience
+            <FadeIn as={"h2"} className="md:text-5xl text-4xl uppercase font-bold mb-8 text-primary">
+                {t('title')}
             </FadeIn>
 
             <div className="space-y-16">

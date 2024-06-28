@@ -1,5 +1,155 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "landingPage": {
+    "hello": "Hello there!",
+    "imMarcel": "I'm Marcel Horváth",
+    "engineer": "Software engineer",
+    "description": "passionate about web development.",
+    "description2": "Interested in working together?",
+    "contact": "Let's get in touch!",
+    "contactButton": "Contact me",
+    "seeMyCV": "See my CV"
+  },
+  "services": {
+    "title": "How Can I",
+    "title1": "Support",
+    "title2": "Your",
+    "title3": "Success?",
+    "serviceList": [
+      {
+        "title": "Software solutions",
+        "description": "Offering both project-based work and long-term collaborations to build your custom software."
+      },
+      {
+        "title": "Web Development",
+        "description": "Frontend and backend development, creating modern and responsive web applications."
+      },
+      {
+        "title": "Consultation & Chat",
+        "description": "Available for consultation or just a chat to discuss your ideas and goals."
+      }
+    ]
+  },
+  "about": {
+    "title1": "get to",
+    "title2": "know me",
+    "paragraph1": "Hi, my name is Marcel Horváth. I am from the Czech Republic.",
+    "paragraph2": "My journey in programming began in high school, where I developed an interest in programming and creating websites. Now, I am studying at the Technical University of Liberec, where I am fully dedicated to this field.",
+    "paragraph3": "Programming is not only a job for me but also a hobby. I love creating websites and applications the most, but I can do much more and I am able to learn new things quickly."
+  },
+  "work": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "year": "2024 – PRESENT",
+        "position": "Freelancer",
+        "company": "Self-employed",
+        "details": "Working remotely on various projects."
+      },
+      {
+        "year": "2023 – 2024",
+        "position": "Web Developer",
+        "company": "TriInfo s.r.o.",
+        "details": "Developing and maintaining websites. Migrating from Vue 2 to Vue 3."
+      },
+      {
+        "year": "2017 – 2020",
+        "position": "Researcher",
+        "company": "Valeo",
+        "details": "Contributed to the development of autonomous vehicles. Worked with internal programs, data analysis, and teamwork."
+      }
+    ]
+  },
+  "education": {
+    "title": "My Education",
+    "items": [
+      {
+        "year": "2024 – PRESENT",
+        "institution": "Technical university of Liberec",
+        "details": "Master's degree in information technology"
+      },
+      {
+        "year": "2021 – 2024",
+        "institution": "Technical university of Liberec",
+        "details": "Bachelor's degree in information technology"
+      },
+      {
+        "year": "2017 – 2021",
+        "institution": "Gymnázium Dr. Václava Šmejkala",
+        "details": "High School with focus on programming and mathematics"
+      }
+    ],
+    "caption": "Technical university of Liberec"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "title1": "I work with on a",
+    "title2": "daily basis"
+  },
+  "project": {
+    "title": "Projects",
+    "title1": "I have worked on",
+    "items": {
+      "siprec": {
+        "name": "Siprec",
+        "description": "A comprehensive internal web application for recording, playback, and analysis of calls, including data export and other advanced features.",
+        "work": "Migration from Vue2 to Vue3, new design, bug fixes, implementation of new features, development of a player with call transcription.",
+        "technologies": "Vue.js, Javascript, Vuetify, Vuex, Webpack, Vue-compat, openpgp"
+      },
+      "neznamy-vlastnik": {
+        "name": "Neznamy-vlastnik.cz",
+        "description": "An interactive web application designed for searching property owners on a map.",
+        "work": "Developed the application from scratch, integrated various map layers, dynamic display of parcels and their information, search and filtering.",
+        "technologies": "React.js, Typescript, Leaflet"
+      },
+      "tritio-teleconference": {
+        "name": "Tritio Telekonference",
+        "description": "A platform for video calls, video conferences, and webinars, including user management, recordings, and other features.",
+        "work": "Developed a new version of the application with an improved user interface and advanced features. Not publicly released.",
+        "technologies": "React.js, Typescript, Docker, i18n"
+      },
+      "mapa-kriminality-liberec": {
+        "name": "Mapa kriminality Liberec",
+        "description": "A bachelor's project displaying crime on the map of the city of Liberec for the city police, allowing for better planning and prevention.",
+        "work": "Development of the application, integration of map layers and crime data, filtering, and searching.",
+        "technologies": "React.js, Typescript, Leaflet, Node.js, Express.js, MySQL"
+      },
+      "inteligentni-system-sledovani-rostlin": {
+        "name": "Inteligentní systém sledování rostlin",
+        "description": "A bachelor's thesis utilizing Raspberry Pi with sensors, a pump, and a camera. The web application allows for data visualization, creation of time-lapse videos, and evaluation of plant health using AI.",
+        "work": "Development of the complete system, hardware and software integration, creation of AI models for plant health analysis.",
+        "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "I'm here to help! If you have any questions, comments, or just want to say hi, feel free to reach out. I'll get back to you as soon as possible.",
+    "contactTitle": "Contact information",
+    "socialTitle": "Social media",
+    "formTitle": "Contact form",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "sendButtonText": "Send",
+    "sendingStatus": {
+      "success": "Message sent successfully!",
+      "error": "Error sending message! Please try again."
+    }
+  },
+  "footer": {
+    "title": "Contact",
+    "rights": "© 2024 All rights reserved.",
+    "iconsCredit": "Icons by"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "not-found": {
+    "title": "404 - PAGE NOT FOUND",
+    "description": "So sorry! The page you are looking for cannot be found.",
+    "backToHome": "Back to home"
   }
 }

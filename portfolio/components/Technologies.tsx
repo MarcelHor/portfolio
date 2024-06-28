@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import {ResponsiveType} from "react-multi-carousel/lib/types";
 import "react-multi-carousel/lib/styles.css";
 import FadeIn from "@/components/FadeIn";
+import {useTranslations} from "next-intl";
 
 const responsive: ResponsiveType = {
     superLargeDesktop: {
@@ -25,11 +26,13 @@ const responsive: ResponsiveType = {
 };
 
 export default function Technologies() {
+    const t = useTranslations('technologies');
+
     return (
         <section className="w-full flex flex-col justify-center items-center overflow-hidden">
             <FadeIn as={"h2"} className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
-                    <span className="text-primary">Technologies</span> I work with on a <span
-                    className="text-secondary">daily basis</span>
+                    <span className="text-primary">{t('title')}
+                    </span> {t('title1')} <span className="text-primary">{t('title2')}</span>
             </FadeIn>
             <FadeIn className="w-full" delay={0.1}>
                 <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000}

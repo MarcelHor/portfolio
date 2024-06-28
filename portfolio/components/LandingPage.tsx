@@ -9,7 +9,7 @@ import FadeIn from "@/components/FadeIn";
 import {useTranslations} from 'next-intl';
 
 export default function LandingPage() {
-    const t = useTranslations();
+    const t = useTranslations('landingPage');
     return (
         <section
             className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] w-full border-b-2 border-opacity-5 border-white scroll-my-96"
@@ -18,22 +18,20 @@ export default function LandingPage() {
             <div className="z-10 flex flex-col md:flex-row justify-between items-center p-4 w-full max-w-7xl mx-auto">
                 <div
                     className="flex flex-col justify-center items-start lg:w-1/2 p-4">
-                    <FadeIn as={"p"} delay={0} className="text-xl">Hi there!</FadeIn>
-                    <FadeIn as={"h1"} delay={0.1} className="text-4xl md:text-6xl font-bold mt-2">I&apos;m Marcel
-                        Horváth</FadeIn>
+                    <FadeIn as={"p"} delay={0} className="text-xl">{t('hello')}</FadeIn>
+                    <FadeIn as={"h1"} delay={0.1} className="text-4xl md:text-6xl font-bold mt-2">{t('imMarcel')}</FadeIn>
                     <FadeIn as={"p"} delay={0.2} className="text-lg mt-4 font-thin leading-8">
-                        <span className="font-semibold">Software engineer</span> passionate about web
-                        development. <br/>
-                        Interested in working together? <span
-                        className="font-semibold">Let&apos;s get in touch!</span>
+                        <span className="font-semibold">{t('engineer')}</span> {t('description')}<br/>
+                        {t('description2')} <span
+                        className="font-semibold">{t('contact')}</span>
                         <br/>
                     </FadeIn>
                     <FadeIn delay={0.3} className="flex justify-start space-x-4 mt-8">
                         <Link href={"#contact"} className="btn btn-primary">
-                            Contact me <FontAwesomeIcon icon={faChevronRight}/>
+                            {t('contactButton')} <FontAwesomeIcon icon={faChevronRight}/>
                         </Link>
                         <button className="btn btn-secondary btn-outline">
-                            See my CV <FontAwesomeIcon icon={faChevronRight}/>
+                            {t('seeMyCV')} <FontAwesomeIcon icon={faChevronRight}/>
                         </button>
                     </FadeIn>
                     <FadeIn delay={0.4} className="flex justify-start mt-8 space-x-2">

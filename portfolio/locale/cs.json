@@ -1,5 +1,155 @@
 {
-  "Index": {
-    "title": "Serus!"
+  "landingPage": {
+    "hello": "Dobrý den!",
+    "imMarcel": "Jsem Marcel Horváth",
+    "engineer": "Softwarový inženýr",
+    "description": "s vášní pro vývoj webových stránek.",
+    "description2": "Máte zájem o spolupráci?",
+    "contact": "Pošlete mi zprávu!",
+    "contactButton": "Kontaktujte mě",
+    "seeMyCV": "Můj životopis"
+  },
+  "services": {
+    "title": "Jak",
+    "title1": "Vám",
+    "title2": "mohu",
+    "title3": "pomoci?",
+    "serviceList": [
+      {
+        "title": "Softwarová řešení",
+        "description": "Nabízím projektovou práci i dlouhodobou spolupráci při vývoji vašeho softwaru."
+      },
+      {
+        "title": "Webový vývoj",
+        "description": "Frontend a backend vývoj, tvorba moderních a responzivních webových aplikací."
+      },
+      {
+        "title": "Konzultace a chat",
+        "description": "K dispozici pro konzultace nebo jen pro chatování o vašich nápadech a cílech."
+      }
+    ]
+  },
+  "about": {
+    "title1": "Seznamte se",
+    "title2": "se mnou",
+    "paragraph1": "Ahoj, jmenuji se Marcel Horváth. Jsem z České republiky.",
+    "paragraph2": "Moje cesta k programování začala na střední škole, kde jsem se začal zajímat o programování a tvorbu webových stránek. Nyní studuji Technickou univerzitu v Liberci, kde se tomuto oboru věnuji naplno.",
+    "paragraph3": "Programování je pro mě nejen prací, ale i koníčkem. Nejraději vytvářím webové stránky a aplikace, ale umím toho mnohem víc a jsem schopen se rychle učit nové věci."
+  },
+  "work": {
+    "title": "Pracovní zkušenosti",
+    "items": [
+      {
+        "year": "2024 – současnost",
+        "position": "Freelance",
+        "company": "Práce na volné noze",
+        "details": "Vývoj webových stránek a aplikací. Spolupráce na různých projektech."
+      },
+      {
+        "year": "2023 – 2024",
+        "position": "Webový vývojář",
+        "company": "TriInfo s.r.o.",
+        "details": "Vývoj a údržba webových stránek. Migrace z Vue 2 na Vue 3."
+      },
+      {
+        "year": "2017 – 2020",
+        "position": "Výzkumník",
+        "company": "Valeo",
+        "details": "Podílení na vývoji autonomních vozidel. Práce s interními programy, analýza dat a týmová spolupráce."
+      }
+    ]
+  },
+  "education": {
+    "title": "Moje vzdělání",
+    "items": [
+      {
+        "year": "2024 – současnost",
+        "institution": "Technická univerzita v Liberci",
+        "details": "Magisterské studium v oboru informatika"
+      },
+      {
+        "year": "2021 – 2024",
+        "institution": "Technická univerzita v Liberci",
+        "details": "Bakalářské studium v oboru informatika"
+      },
+      {
+        "year": "2017 – 2021",
+        "institution": "Gymnázium Dr. Václava Šmejkala",
+        "details": "Střední škola se zaměřením na programování a matematiku"
+      }
+    ],
+    "caption": "Technická univerzita v Liberci"
+  },
+  "technologies": {
+    "title": "Technologie",
+    "title1": "se kterými",
+    "title2": "denně pracuji"
+  },
+  "project": {
+    "title": "Projekty",
+    "title1": "na kterých jsem pracoval",
+    "items": {
+      "siprec": {
+        "name": "Siprec",
+        "description": "Komplexní interní webová aplikace pro záznam, přehrávání a analýzu hovorů, včetně exportu dat a dalších pokročilých funkcí.",
+        "work": "Migrace z Vue2 na Vue3, nový design, oprava chyb, implementace nových funkcí, vývoj přehrávače společně s transkripcí hovorů.",
+        "technologies": "Vue.js, Javascript, Vuetify, Vuex, Webpack, Vue-compat, openpgp"
+      },
+      "neznamy-vlastnik": {
+        "name": "Neznamy-vlastnik.cz",
+        "description": "Interaktivní webová aplikace určená pro vyhledávání vlastníků nemovitostí na mapě.",
+        "work": "Vývoj aplikace od základů, integrace různých mapových podkladů, dynamické zobrazení pozemků a informací o nich, vyhledávání a filtrování.",
+        "technologies": "React.js, Typescript, Leaflet"
+      },
+      "tritio-telekonference": {
+        "name": "Tritio Telekonference",
+        "description": "Platforma pro videohovory, videokonference a webináře, včetně správy uživatelů, záznamů a dalších funkcí.",
+        "work": "Vývoj nové verze aplikace s vylepšeným uživatelským prostředím a pokročilými funkcemi. Není veřejně publikováno.",
+        "technologies": "React.js, Typescript, Docker, i18n"
+      },
+      "mapa-kriminality-liberec": {
+        "name": "Mapa kriminality Liberec",
+        "description": "Bakalářský projekt zobrazující kriminalitu na mapě města Liberec pro městskou policii, umožňující lepší plánování a prevenci.",
+        "work": "Vývoj aplikace, integrace mapových podkladů a dat o kriminalitě, filtrování a vyhledávání.",
+        "technologies": "React.js, Typescript, Leaflet, Node.js, Express.js, MySQL"
+      },
+      "inteligentni-system-sledovani-rostlin": {
+        "name": "Inteligentní systém sledování rostlin",
+        "description": "Bakalářská práce využívající Raspberry Pi se senzory, čerpadlo a kameru. Webová aplikace umožňuje vizualizaci dat, tvorbu časosběrných videí a vyhodnocení zdravotního stavu rostlin pomocí AI.",
+        "work": "Vývoj kompletního systému, integrace hardwaru a softwaru, tvorba AI modelů pro analýzu zdraví rostlin.",
+        "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontaktujte mě",
+    "description": "Jsem tu, abych pomohl! Pokud máte otázky, komentáře nebo jen chcete říct ahoj, neváhejte mě kontaktovat. Odpovím vám co nejdříve.",
+    "contactTitle": "Kontaktní informace",
+    "socialTitle": "Sociální sítě",
+    "formTitle": "Kontaktní formulář",
+    "namePlaceholder": "Jméno",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Zpráva",
+    "sendButtonText": "Odeslat",
+    "sendingStatus": {
+      "success": "Zpráva úspěšně odeslána!",
+      "error": "Chyba při odesílání zprávy! Zkuste to prosím znovu."
+    }
+  },
+  "footer": {
+    "title": "Kontakt",
+    "rights": "© 2024 Všechna práva vyhrazena.",
+    "iconsCredit": "Ikony od"
+  },
+  "header": {
+    "home": "Domů",
+    "about": "O mně",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "not-found": {
+    "title": "404 - Stránka nenalezena",
+    "description": "Je mi to moc líto! Stránku, kterou hledáte, nelze najít.",
+    "backToHome": "Zpět na domovskou stránku"
   }
 }

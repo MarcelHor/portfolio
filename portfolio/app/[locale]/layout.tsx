@@ -10,7 +10,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import "../globals.css";
 
 config.autoAddCss = false;
-const inter = Nunito({subsets: ['latin'], weight: '400'});
+const inter = Nunito({subsets: ['latin'], weight: ['400', '700', '200']});
 
 export default async function RootLayout({children, params: {locale}}: {
     children: React.ReactNode;

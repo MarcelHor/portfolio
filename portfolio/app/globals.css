@@ -6,7 +6,7 @@ html,
 body {
     cursor: none !important;
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
 }
 
 button, a, span, div, input, textarea {

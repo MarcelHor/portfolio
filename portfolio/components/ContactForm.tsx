@@ -3,8 +3,10 @@ import {sendEmail} from "@/actions/contactAction";
 import {FormEvent, useRef, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle, faExclamationCircle} from "@fortawesome/free-solid-svg-icons";
+import {useTranslations} from "next-intl";
 
 export default function ContactForm() {
+    const t = useTranslations('contact');
     const formRef = useRef<HTMLFormElement>(null);
     const [formStatus, setFormStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -38,30 +40,30 @@ export default function ContactForm() {
     return (
         <form className="form-control flex flex-col w-full mx-auto space-y-4" onSubmit={handleSubmit}
               ref={formRef}>
-            <h3 className="text-2xl uppercase text-secondary font-bold">Contact form</h3>
-            <input type="text" placeholder="Name" name="name" className="input input-bordered" minLength={3}
+            <h3 className="text-2xl uppercase text-secondary font-bold">{t('formTitle')}</h3>
+            <input type="text" placeholder={t('namePlaceholder')} name="name" className="input input-bordered" minLength={3}
                    maxLength={100}
                    required/>
-            <input type="email" placeholder="Email" name="email" className="input input-bordered" minLength={3}
+            <input type="email" placeholder={t('emailPlaceholder')} name="email" className="input input-bordered" minLength={3}
                    maxLength={100}
                    required/>
-            <textarea placeholder="Message" name="message" className="textarea textarea-bordered h-32" minLength={3}
+            <textarea placeholder={t('messagePlaceholder')} name="message" className="textarea textarea-bordered h-32" minLength={3}
                       maxLength={1000} required/>
             <button type="submit" className="btn btn-primary">
-                {formStatus === "loading" ? <span className="loading loading-spinner"/> : "Send"}
+                {formStatus === "loading" ? <span className="loading loading-spinner"/> : t('sendButtonText')}
             </button>
             <div className="w-full flex flex-col min-h-14 items-center justify-center">
                 {formStatus === "success" &&
                     <div role="alert" className="alert alert-success h-14 text-white flex items-center">
                         <FontAwesomeIcon icon={faCheckCircle} className="mr-2"/>
-                        Message sent successfully!
+                        {t('sendingStatus.success')}
                     </div>
                 }
 
                 {formStatus === "error" &&
                     <div role="alert" className="alert alert-error h-14 flex items-center text-white">
                         <FontAwesomeIcon icon={faExclamationCircle} className="mr-2"/>
-                        Error sending message! Please try again.
+                        {t('sendingStatus.error')}
                     </div>
                 }
             </div>
