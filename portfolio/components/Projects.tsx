@@ -15,7 +15,7 @@ const projects = [
         image: tmobile,
     },
     {
-        title: 'Neznamy-vlastnik.cz',
+        title: 'Neznamy-vlastnik',
         slug: 'neznamy-vlastnik',
         image: neznamyVlastnik,
     },
@@ -37,7 +37,7 @@ const projects = [
 ];
 
 export default function Projects() {
-    const t = useTranslations('project');
+    const t = useTranslations('projects');
     return (
         <section className="w-full flex flex-col items-center justify-center scroll-m-28" id={"projects"}>
             <FadeIn as={"h2"} className="md:text-5xl text-4xl font-bold text-center uppercase mb-8">
@@ -50,7 +50,7 @@ export default function Projects() {
                         key={index}
                         className={`mouse-hover relative group overflow-hidden ${index === 0 ? 'lg:row-span-2' : ''}`}
                     >
-                        <Link href={`/project/${project.slug}`}>
+                        <Link href={`/projects/${project.slug}`}>
                             <Image src={project.image} alt={project.title}
                                    className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110 rounded"/>
                             <div

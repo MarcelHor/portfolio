@@ -34,7 +34,7 @@ const projects = [
 ];
 
 export default function Project({params}: { params: { slug: string } }) {
-    const t = useTranslations('project');
+    const t = useTranslations('projects');
 
     const project = projects.find(project => project.slug === params.slug);
 
@@ -44,8 +44,8 @@ export default function Project({params}: { params: { slug: string } }) {
 
     return (
         <section
-            className={"relative flex flex my-32 space-x-32 min-h-[calc(100vh-4rem)] w-full max-w-7xl"}>
-            <div className="flex flex-col w-1/2 items-start">
+            className={"relative flex flex-col md:flex-row p-4 justify-center items-center space-x-0 space-y-32 md:space-y-0 md:space-x-32 min-h-[calc(100vh-4rem)] w-full max-w-7xl"}>
+            <div className="flex flex-col md:w-1/2">
                 <FadeIn as={"h1"} className="md:text-5xl text-4xl font-bold uppercase mb-8 text-primary">
                     {t(`items.${params.slug}.name`)}
                 </FadeIn>
@@ -56,7 +56,7 @@ export default function Project({params}: { params: { slug: string } }) {
                         {t(`items.${params.slug}.technologies`)}</p>
                 </FadeIn>
             </div>
-            <FadeIn direction={"left"} className="flex flex-col w-1/2 h-full">
+            <FadeIn direction={"left"} className="flex flex-col md:w-1/2 h-full">
                 <Image src={project.image} alt={"Project image"}
                        className="w-full h-full object-cover rounded"
                 />

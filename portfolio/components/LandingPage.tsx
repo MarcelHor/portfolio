@@ -4,7 +4,8 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import Image from "next/image"
-import me from "@/public/me.png"
+import me from "@/public/me2.png"
+
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from 'next-intl';
 
@@ -19,7 +20,7 @@ export default function LandingPage() {
                 <div
                     className="flex flex-col justify-center items-start lg:w-1/2 p-4">
                     <FadeIn as={"p"} delay={0} className="text-xl">{t('hello')}</FadeIn>
-                    <FadeIn as={"h1"} delay={0.1} className="text-4xl md:text-6xl font-bold mt-2">{t('imMarcel')}</FadeIn>
+                    <FadeIn as={"h1"} delay={0.1} className="text-3xl lg:text-6xl font-bold mt-2">{t('imMarcel')}</FadeIn>
                     <FadeIn as={"p"} delay={0.2} className="text-lg mt-4 font-thin leading-8">
                         <span className="font-semibold">{t('engineer')}</span> {t('description')}<br/>
                         {t('description2')} <span
@@ -27,7 +28,7 @@ export default function LandingPage() {
                         <br/>
                     </FadeIn>
                     <FadeIn delay={0.3} className="flex justify-start space-x-4 mt-8">
-                        <Link href={"#contact"} className="btn btn-primary">
+                        <Link href={"/#contact"} className="btn btn-primary">
                             {t('contactButton')} <FontAwesomeIcon icon={faChevronRight}/>
                         </Link>
                         <button className="btn btn-secondary btn-outline">
@@ -43,12 +44,13 @@ export default function LandingPage() {
                         </a>
                     </FadeIn>
                 </div>
-                <FadeIn direction={"left"} className="flex justify-center items-center md:w-1/2 p-4">
-                    <Image
-                        className="w-3/4 rounded-full border-none"
-                        src={me}
-                        alt="Marcel Horváth"
-                    />
+                <FadeIn direction={"left"} className="flex justify-center rounded-full items-center md:w-1/2 p-4">
+                    <></>
+                    {/*<Image*/}
+                    {/*    className=" md:w-2/3 rounded-full"*/}
+                    {/*    src={me}*/}
+                    {/*    alt="Marcel Horváth"*/}
+                    {/*/>*/}
                 </FadeIn>
             </div>
         </section>

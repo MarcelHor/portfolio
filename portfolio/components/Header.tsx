@@ -20,10 +20,10 @@ export default function Header() {
                         </div>
                         <ul tabIndex={0}
                             className="menu  dropdown-content bg-base-200 mt-3 z-50 p-2 shadow-md rounded-box w-52">
-                            <li><Link href={"#home"}>{t('home')}</Link></li>
-                            <li><Link href={"#about"}>{t('about')}</Link></li>
-                            <li><Link href={"#projects"}>{t('projects')}</Link></li>
-                            <li><Link href={"#contact"} className="btn btn-primary btn-sm">{t('contact')}</Link></li>
+                            <li><Link href={"/#home"}>{t('home')}</Link></li>
+                            <li><Link href={"/#about"}>{t('about')}</Link></li>
+                            <li><Link href={"/projects"}>{t('projects')}</Link></li>
+                            <li><Link href={"/#contact"} className="btn btn-primary btn-sm">{t('contact')}</Link></li>
                         </ul>
                     </div>
                     <Link href={"/"} className="btn btn-ghost text-xl">Marcel Horváth</Link>
@@ -35,10 +35,10 @@ export default function Header() {
 
             <nav className="navbar-end w-full hidden md:flex">
                 <ul className="menu menu-horizontal flex flex-row items-center space-x-2">
-                    <li><Link href={"#home"}>{t('home')}</Link></li>
-                    <li><Link href={"#about"}>{t('about')}</Link></li>
-                    <li><Link href={"#projects"}>{t('projects')}</Link></li>
-                    <li><Link href={"#contact"} className="btn btn-primary btn-sm">{t('contact')}</Link></li>
+                    <li><Link href={"/#home"}>{t('home')}</Link></li>
+                    <li><Link href={"/#about"}>{t('about')}</Link></li>
+                    <li><Link href={"/projects"}>{t('projects')}</Link></li>
+                    <li><Link href={"/#contact"} className="btn btn-primary btn-sm">{t('contact')}</Link></li>
                     <LanguageSwitcher/>
                 </ul>
             </nav>

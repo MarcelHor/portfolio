@@ -85,7 +85,7 @@
     "title1": "se kterými",
     "title2": "denně pracuji"
   },
-  "project": {
+  "projects": {
     "title": "Projekty",
     "title1": "na kterých jsem pracoval",
     "items": {
@@ -96,7 +96,7 @@
         "technologies": "Vue.js, Javascript, Vuetify, Vuex, Webpack, Vue-compat, openpgp"
       },
       "neznamy-vlastnik": {
-        "name": "Neznamy-vlastnik.cz",
+        "name": "Neznamy-vlastnik",
         "description": "Interaktivní webová aplikace určená pro vyhledávání vlastníků nemovitostí na mapě.",
         "work": "Vývoj aplikace od základů, integrace různých mapových podkladů, dynamické zobrazení pozemků a informací o nich, vyhledávání a filtrování.",
         "technologies": "React.js, Typescript, Leaflet"
@@ -123,7 +123,7 @@
   },
   "contact": {
     "title": "Kontaktujte mě",
-    "description": "Jsem tu, abych pomohl! Pokud máte otázky, komentáře nebo jen chcete říct ahoj, neváhejte mě kontaktovat. Odpovím vám co nejdříve.",
+    "description": "Jsem tu, abych pomohl! Pokud máte otázky, nebo jen chcete říct ahoj, neváhejte mě kontaktovat. Odpovím Vám co nejdříve.",
     "contactTitle": "Kontaktní informace",
     "socialTitle": "Sociální sítě",
     "formTitle": "Kontaktní formulář",

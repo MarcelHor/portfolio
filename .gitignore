@@ -202,6 +202,7 @@ tests/e2e/.env
 ############################
 examples/**/types/generated
 .env
+
 license.txt
 exports
 *.cache

@@ -1,5 +1,5 @@
 'use client';
-import {useRouter} from 'next/navigation';
+import {useRouter, usePathname} from 'next/navigation';
 import {useTransition} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGlobe} from "@fortawesome/free-solid-svg-icons";
@@ -7,11 +7,13 @@ import {faGlobe} from "@fortawesome/free-solid-svg-icons";
 const LanguageSwitcher = () => {
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
+    const pathname = usePathname();
 
     const changeLanguage = (language: string) => {
         if (isPending) return;
         startTransition(() => {
-            router.replace(`/${language}`);
+            const newUrl = pathname.replace(/^\/(en|cs)/, `/${language}`);
+            router.push(newUrl);
         });
     };
 

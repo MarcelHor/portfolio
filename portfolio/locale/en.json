@@ -20,11 +20,11 @@
         "description": "Offering both project-based work and long-term collaborations to build your custom software."
       },
       {
-        "title": "Web Development",
+        "title": "Web development",
         "description": "Frontend and backend development, creating modern and responsive web applications."
       },
       {
-        "title": "Consultation & Chat",
+        "title": "Consultation & chat",
         "description": "Available for consultation or just a chat to discuss your ideas and goals."
       }
     ]
@@ -85,7 +85,7 @@
     "title1": "I work with on a",
     "title2": "daily basis"
   },
-  "project": {
+  "projects": {
     "title": "Projects",
     "title1": "I have worked on",
     "items": {
@@ -96,12 +96,12 @@
         "technologies": "Vue.js, Javascript, Vuetify, Vuex, Webpack, Vue-compat, openpgp"
       },
       "neznamy-vlastnik": {
-        "name": "Neznamy-vlastnik.cz",
+        "name": "Neznamy-vlastnik",
         "description": "An interactive web application designed for searching property owners on a map.",
         "work": "Developed the application from scratch, integrated various map layers, dynamic display of parcels and their information, search and filtering.",
         "technologies": "React.js, Typescript, Leaflet"
       },
-      "tritio-teleconference": {
+      "tritio-telekonference": {
         "name": "Tritio Telekonference",
         "description": "A platform for video calls, video conferences, and webinars, including user management, recordings, and other features.",
         "work": "Developed a new version of the application with an improved user interface and advanced features. Not publicly released.",
