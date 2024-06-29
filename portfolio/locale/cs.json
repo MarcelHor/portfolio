@@ -115,7 +115,7 @@
       },
       "inteligentni-system-sledovani-rostlin": {
         "name": "Inteligentní systém sledování rostlin",
-        "description": "Bakalářská práce využívající Raspberry Pi se senzory, čerpadlo a kameru. Webová aplikace umožňuje vizualizaci dat, tvorbu časosběrných videí a vyhodnocení zdravotního stavu rostlin pomocí AI.",
+        "description": "Bakalářská práce využívající Raspberry Pi vybavené řadou senzorů, čerpadlem pro zavlažování a kamerou pro pravidelné monitorování rostliny. Webová aplikace umožňuje vizualizaci dat, tvorbu časosběrných videí a vyhodnocení zdravotního stavu rostlin pomocí AI.",
         "work": "Vývoj kompletního systému, integrace hardwaru a softwaru, tvorba AI modelů pro analýzu zdraví rostlin.",
         "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
       }

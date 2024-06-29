@@ -91,32 +91,32 @@
     "items": {
       "siprec": {
         "name": "Siprec",
-        "description": "A comprehensive internal web application for recording, playback, and analysis of calls, including data export and other advanced features.",
-        "work": "Migration from Vue2 to Vue3, new design, bug fixes, implementation of new features, development of a player with call transcription.",
+        "description": "Complex internal web application for recording, playback and analysis of calls, including data export and other advanced features.",
+        "work": "Migration from Vue2 to Vue3, new design, bug fixing, implementation of new features, development of a player along with call transcription.",
         "technologies": "Vue.js, Javascript, Vuetify, Vuex, Webpack, Vue-compat, openpgp"
       },
       "neznamy-vlastnik": {
         "name": "Neznamy-vlastnik",
-        "description": "An interactive web application designed for searching property owners on a map.",
+        "description": "Interactive web application designed to search for property owners on a map.",
         "work": "Developed the application from scratch, integrated various map layers, dynamic display of parcels and their information, search and filtering.",
         "technologies": "React.js, Typescript, Leaflet"
       },
       "tritio-telekonference": {
         "name": "Tritio Telekonference",
-        "description": "A platform for video calls, video conferences, and webinars, including user management, recordings, and other features.",
-        "work": "Developed a new version of the application with an improved user interface and advanced features. Not publicly released.",
+        "description": "A platform for video calls, video conferences and webinars, including user management, recordings and other features.",
+        "work": "Development of a new version of the application with improved user experience and advanced features. Not publicly published.",
         "technologies": "React.js, Typescript, Docker, i18n"
       },
       "mapa-kriminality-liberec": {
         "name": "Mapa kriminality Liberec",
-        "description": "A bachelor's project displaying crime on the map of the city of Liberec for the city police, allowing for better planning and prevention.",
+        "description": "Bachelor's project showing crime on a map of Liberec for the city police, enabling better planning and prevention.",
         "work": "Development of the application, integration of map layers and crime data, filtering, and searching.",
         "technologies": "React.js, Typescript, Leaflet, Node.js, Express.js, MySQL"
       },
       "inteligentni-system-sledovani-rostlin": {
         "name": "Inteligentní systém sledování rostlin",
-        "description": "A bachelor's thesis utilizing Raspberry Pi with sensors, a pump, and a camera. The web application allows for data visualization, creation of time-lapse videos, and evaluation of plant health using AI.",
-        "work": "Development of the complete system, hardware and software integration, creation of AI models for plant health analysis.",
+        "description": "Bachelor thesis using a Raspberry Pi equipped with a number of sensors, a pump for irrigation and a camera for monitoring the plant. The web application allows visualization of the data, creation of timelapse videos and evaluation of plant health using AI.",
+        "work": "Development of a complete system, integration of hardware and software, creation of AI models for plant health analysis.",
         "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
       }
     }

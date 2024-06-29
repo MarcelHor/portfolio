@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         <header
-            className="navbar h-16 px-4 xl:px-32 backdrop-blur-xl bg-transparent border-b-2 border-opacity-5 border-white sticky top-0 z-50">
+            className="navbar h-16 px-4 xl:px-32 backdrop-blur-xl bg-transparent border-b-2 border-opacity-5 border-white sticky top-0 z-40">
             <div className="flex items-center justify-between w-full md:w-auto">
                 <div className="flex items-center">
                     <div className="dropdown">
