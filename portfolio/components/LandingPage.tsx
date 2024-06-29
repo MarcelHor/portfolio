@@ -4,7 +4,7 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import Image from "next/image"
-import me from "@/public/me2.png"
+import me from "@/public/me.png"
 
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from 'next-intl';
@@ -44,13 +44,13 @@ export default function LandingPage() {
                         </a>
                     </FadeIn>
                 </div>
-                <FadeIn direction={"left"} className="flex justify-center rounded-full items-center md:w-1/2 p-4">
+                <FadeIn direction={"left"}  className="flex justify-center items-center md:w-1/2 p-4">
                     <></>
-                    {/*<Image*/}
-                    {/*    className=" md:w-2/3 rounded-full"*/}
-                    {/*    src={me}*/}
-                    {/*    alt="Marcel Horváth"*/}
-                    {/*/>*/}
+                    <Image
+                        src={me}
+                        className=" w-full"
+                        alt="Marcel Horváth"
+                    />
                 </FadeIn>
             </div>
         </section>

@@ -15,7 +15,7 @@ interface MotionFadeInProps {
 export default function FadeIn({
                                    children,
                                    duration = 0.5,
-                                   distance = 30,
+                                   distance = 50,
                                    delay = 0,
                                    direction = "up",
                                    as: Tag = "div",
