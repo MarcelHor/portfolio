@@ -25,7 +25,7 @@
       },
       {
         "title": "Konzultace a chat",
-        "description": "K dispozici pro konzultace nebo jen pro chatování o vašich nápadech a cílech."
+        "description": "Jsem k dispozici pro konzultace nebo jen pro chatování o vašich nápadech a cílech."
       }
     ]
   },
@@ -137,7 +137,7 @@
     }
   },
   "footer": {
-    "title": "Kontakt",
+    "title": "Kontaktujtě mě",
     "rights": "© 2024 Všechna práva vyhrazena.",
     "iconsCredit": "Ikony od"
   },

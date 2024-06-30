@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faBriefcase, faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import {Link} from "@/lib/navigation";
 import {useTranslations} from "next-intl";
 
 
@@ -18,12 +18,12 @@ export default function Footer() {
                 <h3 className={"footer-title"}>{t('title')}</h3>
                 <span><FontAwesomeIcon icon={faEnvelope} className={"mr-2"}/>mar.horv22@gmail.com</span>
                 <div className={"flex flex-row space-x-2 w-full"}>
-                    <a href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
+                    <Link href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
                         <FontAwesomeIcon size="2x" icon={faGithub} />
-                    </a>
-                    <a href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
                         <FontAwesomeIcon size="2x" icon={faLinkedin} />
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={"footer-title normal-case text-sm font-normal"}>

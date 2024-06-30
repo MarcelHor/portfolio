@@ -4,6 +4,7 @@ import {faEnvelope, faBriefcase} from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "@/components/ContactForm";
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from "next-intl";
+import {Link} from "@/lib/navigation";
 
 export default function Contact() {
     const t = useTranslations('contact');
@@ -35,12 +36,12 @@ export default function Contact() {
                     <div className={"text-lg w-full"}>
                         <h3 className={"text-2xl uppercase text-secondary font-bold mb-2"}>{t('socialTitle')}</h3>
                         <div className={"flex flex-row space-x-2 w-full"}>
-                            <a href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
+                            <Link href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
                                 <FontAwesomeIcon size="2x" icon={faGithub}/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
+                            </Link>
+                            <Link href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
                                 <FontAwesomeIcon size="2x" icon={faLinkedin}/>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </FadeIn>

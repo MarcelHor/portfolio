@@ -12,6 +12,32 @@ import "../globals.css";
 config.autoAddCss = false;
 const inter = Nunito({subsets: ['latin'], weight: ['400', '700', '200']});
 
+export const metadata: Metadata = {
+    title: 'Marcel Horváth | Portfolio',
+    description: 'Marcel Horváth, Software Engineer, Portfolio',
+    keywords: [
+        'Marcel Horváth',
+        'Marcel Horvath Portfolio',
+        'Portfolio',
+        'Software Engineer',
+        'Software Developer',
+        'Web Developer',
+        'Web Development',
+        'Web applications',
+        'Programming',
+        'Custom Software Solutions',
+        'Frontend',
+        'Backend',
+        'Consultation',
+        'Developer',
+        'Programátor',
+        'Tvorba webových aplikací',
+        'Vývojář',
+        'Tvorba webových stránek',
+    ],
+};
+
+
 export default async function RootLayout({children, params: {locale}}: {
     children: React.ReactNode;
     params: { locale: string };

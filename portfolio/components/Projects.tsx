@@ -6,7 +6,8 @@ import mapaKriminality from '@/public/policie.png';
 import tmobile from '@/public/tmobile.png';
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from "next-intl";
-import Link from "next/link";
+import {Link} from "@/lib/navigation";
+
 
 const projects = [
     {

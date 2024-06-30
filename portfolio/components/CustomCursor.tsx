@@ -1,18 +1,18 @@
 "use client";
-import { useEffect, useLayoutEffect, useState } from 'react';
-import { usePathname } from "next/navigation";
+import {useEffect, useLayoutEffect, useState} from 'react';
+import {usePathname} from "@/lib/navigation";
 
 const CustomCursor = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [trailingPosition, setTrailingPosition] = useState({ x: 0, y: 0 });
+    const [position, setPosition] = useState({x: 0, y: 0});
+    const [trailingPosition, setTrailingPosition] = useState({x: 0, y: 0});
     const [isHovered, setIsHovered] = useState(false);
     const [firstMove, setFirstMove] = useState(false);
     const pathname = usePathname();
 
     useEffect(() => {
         const setFromEvent = (event: MouseEvent) => {
-            const { clientX, clientY } = event;
-            setPosition({ x: clientX, y: clientY });
+            const {clientX, clientY} = event;
+            setPosition({x: clientX, y: clientY});
             if (!firstMove) {
                 setFirstMove(true);
             }
@@ -32,7 +32,7 @@ const CustomCursor = () => {
             setTrailingPosition((prev) => {
                 const x = prev.x + (position.x - prev.x) * 0.1;
                 const y = prev.y + (position.y - prev.y) * 0.1;
-                return { x, y };
+                return {x, y};
             });
             animationFrameId = requestAnimationFrame(followCursor);
         };
@@ -71,7 +71,7 @@ const CustomCursor = () => {
                 <>
                     <div
                         className="custom-cursor w-4 h-4 rounded-full border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-1/2"
-                        style={{ left: `${position.x}px`, top: `${position.y}px` }}
+                        style={{left: `${position.x}px`, top: `${position.y}px`}}
                     />
                     <div
                         className={`trailing-cursor w-4 h-4 rounded-full border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 ${isHovered ? 'scale-150' : ''}`}

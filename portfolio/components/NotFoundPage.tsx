@@ -1,7 +1,7 @@
 import {useTranslations} from "next-intl";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFaceSadTear} from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import {Link} from "@/lib/navigation";
 
 export default function NotFoundPage() {
     const t = useTranslations('not-found');

@@ -2,7 +2,7 @@ import Grid from "@/components/Grid";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
+import {Link} from "@/lib/navigation";
 import Image from "next/image"
 import me from "@/public/me.png"
 
@@ -20,7 +20,8 @@ export default function LandingPage() {
                 <div
                     className="flex flex-col justify-center items-start lg:w-1/2 p-4">
                     <FadeIn as={"p"} delay={0} className="text-xl">{t('hello')}</FadeIn>
-                    <FadeIn as={"h1"} delay={0.1} className="text-3xl lg:text-6xl font-bold mt-2">{t('imMarcel')}</FadeIn>
+                    <FadeIn as={"h1"} delay={0.1}
+                            className="text-3xl lg:text-6xl font-bold mt-2">{t('imMarcel')}</FadeIn>
                     <FadeIn as={"p"} delay={0.2} className="text-lg mt-4 font-thin leading-8">
                         <span className="font-semibold">{t('engineer')}</span> {t('description')}<br/>
                         {t('description2')} <span
@@ -31,24 +32,24 @@ export default function LandingPage() {
                         <Link href={"/#contact"} className="btn btn-primary">
                             {t('contactButton')} <FontAwesomeIcon icon={faChevronRight}/>
                         </Link>
-                        <button className="btn btn-secondary btn-outline">
+                        <Link
+                            href={"https://drive.google.com/file/d/15u0QZ8jtwWkRDl2_JGx72kVrWN7eiWs8/view?usp=sharing"}
+                            className="btn btn-secondary btn-outline">
                             {t('seeMyCV')} <FontAwesomeIcon icon={faChevronRight}/>
-                        </button>
+                        </Link>
                     </FadeIn>
                     <FadeIn delay={0.4} className="flex justify-start mt-8 space-x-2">
-                        <a href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
+                        <Link href="https://github.com/MarcelHor" className="btn btn-ghost btn-circle">
                             <FontAwesomeIcon size="2x" icon={faGithub}/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/marcel-hor/" className="btn btn-ghost btn-circle">
                             <FontAwesomeIcon size="2x" icon={faLinkedin}/>
-                        </a>
+                        </Link>
                     </FadeIn>
                 </div>
-                <FadeIn direction={"left"}  className="flex justify-center items-center md:w-1/2 p-4">
-                    <></>
+                <FadeIn direction={"left"} className="relative flex justify-center items-center md:w-1/2 p-4">
                     <Image
                         src={me}
-                        className=" w-full"
                         alt="Marcel Horváth"
                     />
                 </FadeIn>
