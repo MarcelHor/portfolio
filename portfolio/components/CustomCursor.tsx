@@ -65,8 +65,9 @@ const CustomCursor = () => {
         };
     }, [pathname]);
 
+
     return (
-        <div className="fixed inset-0 pointer-events-none z-50">
+        <div className="fixed inset-0 pointer-events-none z-50 hidden sm:block">
             {firstMove && (
                 <>
                     <div

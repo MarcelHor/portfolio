@@ -81,3 +81,8 @@ button, a, span, div, input, textarea {
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+
+.backdrop-blur-custom {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); /* pro starší verze Safari */
+}
