@@ -35,6 +35,9 @@ export const metadata: Metadata = {
         'Vývojář',
         'Tvorba webových stránek',
     ],
+    icons: [
+       '/favicon.ico',
+    ],
 };
 
 
