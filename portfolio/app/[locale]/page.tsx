@@ -6,9 +6,12 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 
-export default function Home() {
+export default function Home({params: {locale}}: { params: { locale: string } }) {
+    unstable_setRequestLocale(locale);
+
     return (
         <>
             <LandingPage/>

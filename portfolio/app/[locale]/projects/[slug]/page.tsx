@@ -9,6 +9,7 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMicrochip} from "@fortawesome/free-solid-svg-icons";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 const projects = [
     {
@@ -33,8 +34,10 @@ const projects = [
     }
 ];
 
-export default function Project({params}: { params: { slug: string } }) {
+export default function Project({params}: { params: { slug: string , locale: string }}) {
+    unstable_setRequestLocale(params.locale);
     const t = useTranslations('projects');
+
 
     const project = projects.find(project => project.slug === params.slug);
 
