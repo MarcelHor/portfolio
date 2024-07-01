@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+    <url>
+        <loc>https://www.marcel-horvath.com/en</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects/siprec</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects/neznamy-vlastnik</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects/tritio-telekonference</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects/mapa-kriminality-liberec</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.marcel-horvath.com/en/projects/inteligentni-system-sledovani-rostlin</loc>
+        <lastmod>2024-07-01T10:44:16+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://marcel-horvath.com/cs/projects</loc>
+        <lastmod>2024-07-01T10:45:59.763Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://marcel-horvath.com/cs</loc>
+        <lastmod>2024-07-01T10:45:59.763Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
