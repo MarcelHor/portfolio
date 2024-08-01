@@ -39,6 +39,20 @@ export const metadata: Metadata = {
     icons: [
        '/favicon.ico',
     ],
+    openGraph: {
+        type: 'website',
+        url: 'https://marcel-horvath.com',
+        title: 'Marcel Horváth | Portfolio',
+        description: 'Marcel Horváth, Software Engineer, Portfolio',
+        images: [
+            {
+                url: 'https://www.marcel-horvath.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.a188f25b.png&w=3840&q=75',
+                width: 800,
+                height: 600,
+                alt: 'Marcel Horváth | Portfolio',
+            },
+        ],
+    },
 };
 
 export function generateStaticParams() {
