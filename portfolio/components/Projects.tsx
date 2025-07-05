@@ -4,6 +4,8 @@ import neznamyVlastnik from '@/public/neznamy.png';
 import telekonference from '@/public/telekonference.png';
 import mapaKriminality from '@/public/policie.png';
 import tmobile from '@/public/tmobile.png';
+import ssgh from '@/public/ssgh.jpg';
+import s4c from '@/public/s4c.jpg';
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from "next-intl";
 import {Link} from "@/lib/navigation";
@@ -31,10 +33,20 @@ const projects = [
         image: mapaKriminality,
     },
     {
+        title: 's4c',
+        slug: 's4c',
+        image: s4c,
+    },
+    {
         title: 'Inteligentní systém sledování rostlin',
         slug: 'inteligentni-system-sledovani-rostlin',
         image: bp,
-    }
+    },
+    {
+        title: 'ssgh',
+        slug: 'ssgh',
+        image: ssgh,
+    },
 ];
 
 export default function Projects() {
@@ -49,7 +61,7 @@ export default function Projects() {
                     <FadeIn
                         delay={(index + 1) * 0.1}
                         key={index}
-                        className={`mouse-hover relative group overflow-hidden ${index === 0 ? 'lg:row-span-2' : ''}`}
+                        className={`mouse-hover relative group overflow-hidden ${index === 0 || index === 4 ? 'lg:row-span-2' : ''}`}
                     >
                         <Link href={`/projects/${project.slug}`}>
                             <Image src={project.image} alt={project.title}

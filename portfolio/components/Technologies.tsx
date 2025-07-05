@@ -67,6 +67,10 @@ export default function Technologies() {
                         <span className="text-xs font-bold">Vue.js</span>
                     </div>
                     <div className="flex flex-col justify-center items-center space-y-2">
+                        <img src="https://img.icons8.com/?size=100&id=71257&format=png&color=000000" alt="AngularJS"/>
+                        <span className="text-xs font-bold">AngularJS</span>
+                    </div>
+                    <div className="flex flex-col justify-center items-center space-y-2">
                         <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Node.js"/>
                         <span className="text-xs font-bold">Node.js</span>
                     </div>

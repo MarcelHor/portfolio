@@ -46,6 +46,12 @@
         "details": "Vývoj webových stránek a aplikací. Spolupráce na různých projektech."
       },
       {
+        "year": "2024 – současnost",
+        "position": "Frontend vývojář",
+        "company": "PragoData a.s.",
+        "details": "Angular vývoj – Smart4City, aplikace pro kontrolu maturitních prací."
+      },
+      {
         "year": "2023 – 2024",
         "position": "Webový vývojář",
         "company": "TriInfo s.r.o.",
@@ -118,6 +124,18 @@
         "description": "Bakalářská práce využívající Raspberry Pi vybavené řadou senzorů, čerpadlem pro zavlažování a kamerou pro pravidelné monitorování rostliny. Webová aplikace umožňuje vizualizaci dat, tvorbu časosběrných videí a vyhodnocení zdravotního stavu rostlin pomocí AI.",
         "work": "Vývoj kompletního systému, integrace hardwaru a softwaru, tvorba AI modelů pro analýzu zdraví rostlin.",
         "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
+      },
+      "s4c": {
+        "name": "Smart4City",
+        "description": "Aplikace pro správu a monitorování městských služeb, včetně reportování problémů a sledování jejich řešení.",
+        "work": "Vývoj frontendové části aplikace, implementace nových funkcí a vylepšení uživatelského rozhraní.",
+        "technologies": "Angular, RxJS, PrimeNG, Typescript"
+      },
+      "ssgh": {
+        "name": "Aplikace pro SŠGH",
+        "description": "Interní aplikace pro školu SŠGH sloužící ke kontrole maturitních prací a jejich hodnocení.",
+        "work": "Vývoj uživatelského rozhraní v Angularu. Tvorba přehledných tabulek, filtrování, validace vstupů a podpora školní administrativy.",
+        "technologies": "Angular, RxJS, PrimeNG, Typescript"
       }
     }
   },
