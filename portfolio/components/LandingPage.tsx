@@ -33,7 +33,7 @@ export default function LandingPage() {
                             {t('contactButton')} <FontAwesomeIcon icon={faChevronRight}/>
                         </Link>
                         <Link
-                            href={"https://drive.google.com/file/d/15u0QZ8jtwWkRDl2_JGx72kVrWN7eiWs8/view?usp=sharing"}
+                            href={"https://drive.google.com/file/d/19nLrd4T0Yg6BAc3D0vwQ7tZnbTTY6dOc/view?usp=sharing"}
                             className="btn btn-secondary btn-outline">
                             {t('seeMyCV')} <FontAwesomeIcon icon={faChevronRight}/>
                         </Link>
