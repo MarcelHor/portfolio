@@ -13,39 +13,39 @@ import {Link} from "@/lib/navigation";
 
 const projects = [
     {
-        title: 'Siprec',
-        slug: 'siprec',
-        image: tmobile,
-    },
-    {
-        title: 'Neznamy-vlastnik',
-        slug: 'neznamy-vlastnik',
-        image: neznamyVlastnik,
-    },
-    {
-        title: 'Tritio Telekonference',
-        slug: 'tritio-telekonference',
-        image: telekonference,
-    },
-    {
-        title: 'Mapa kriminality Liberec',
-        slug: 'mapa-kriminality-liberec',
-        image: mapaKriminality,
-    },
-    {
-        title: 's4c',
+        title: 'items.s4c.name',
         slug: 's4c',
         image: s4c,
     },
     {
-        title: 'Inteligentní systém sledování rostlin',
-        slug: 'inteligentni-system-sledovani-rostlin',
-        image: bp,
-    },
-    {
-        title: 'ssgh',
+        title: 'items.ssgh.name',
         slug: 'ssgh',
         image: ssgh,
+    },
+    {
+        title: 'items.neznamy-vlastnik.name',
+        slug: 'neznamy-vlastnik',
+        image: neznamyVlastnik,
+    },
+    {
+        title: 'items.tritio-telekonference.name',
+        slug: 'tritio-telekonference',
+        image: telekonference,
+    },
+    {
+        title: 'items.siprec.name',
+        slug: 'siprec',
+        image: tmobile,
+    },
+    {
+        title: 'items.mapa-kriminality-liberec.name',
+        slug: 'mapa-kriminality-liberec',
+        image: mapaKriminality,
+    },
+    {
+        title: 'items.inteligentni-system-sledovani-rostlin.name',
+        slug: 'inteligentni-system-sledovani-rostlin',
+        image: bp,
     },
 ];
 
@@ -68,7 +68,7 @@ export default function Projects() {
                                    className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110 rounded"/>
                             <div
                                 className="absolute inset-0 bg-primary bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
-                                <h2 className="text-xl font-bold uppercase">{project.title}</h2>
+                                <h2 className="text-xl font-bold uppercase">{t(project.title)}</h2>
                             </div>
                         </Link>
                     </FadeIn>

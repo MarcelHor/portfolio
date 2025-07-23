@@ -11,7 +11,7 @@
   },
   "services": {
     "title": "Jak",
-    "title1": "Vám",
+    "title1": "vám",
     "title2": "mohu",
     "title3": "pomoci?",
     "serviceList": [
@@ -30,8 +30,8 @@
     ]
   },
   "about": {
-    "title1": "Seznamte se",
-    "title2": "se mnou",
+    "title1": "O",
+    "title2": "mně",
     "paragraph1": "Ahoj, jmenuji se Marcel Horváth. Jsem z České republiky.",
     "paragraph2": "Moje cesta k programování začala na střední škole, kde jsem se začal zajímat o programování a tvorbu webových stránek. Nyní studuji Technickou univerzitu v Liberci, kde se tomuto oboru věnuji naplno.",
     "paragraph3": "Programování je pro mě nejen prací, ale i koníčkem. Nejraději vytvářím webové stránky a aplikace, ale umím toho mnohem víc a jsem schopen se rychle učit nové věci."
@@ -49,7 +49,7 @@
         "year": "2024 – současnost",
         "position": "Frontend vývojář",
         "company": "PragoData a.s.",
-        "details": "Angular vývoj – Smart4City, aplikace pro kontrolu maturitních prací."
+        "details": "Angular vývoj – velké projekty jako Smart4City a systém pro kontrolu maturitních prací."
       },
       {
         "year": "2023 – 2024",
@@ -81,7 +81,7 @@
       {
         "year": "2017 – 2021",
         "institution": "Gymnázium Dr. Václava Šmejkala",
-        "details": "Střední škola se zaměřením na programování a matematiku"
+        "details": "Střední škola se zaměřením na informatiku a matematiku"
       }
     ],
     "caption": "Technická univerzita v Liberci"
@@ -110,7 +110,7 @@
       "tritio-telekonference": {
         "name": "Tritio Telekonference",
         "description": "Platforma pro videohovory, videokonference a webináře, včetně správy uživatelů, záznamů a dalších funkcí.",
-        "work": "Vývoj nové verze aplikace s vylepšeným uživatelským prostředím a pokročilými funkcemi. Není veřejně publikováno.",
+        "work": "Vývoj nové verze aplikace s vylepšeným uživatelským prostředím a pokročilými funkcemi. Projekt není veřejně dostupný.",
         "technologies": "React.js, Typescript, Docker, i18n"
       },
       "mapa-kriminality-liberec": {
@@ -127,15 +127,15 @@
       },
       "s4c": {
         "name": "Smart4City",
-        "description": "Aplikace pro správu a monitorování městských služeb, včetně reportování problémů a sledování jejich řešení.",
-        "work": "Vývoj frontendové části aplikace, implementace nových funkcí a vylepšení uživatelského rozhraní.",
+        "description": "Komplexní systém chytrého parkování a správy městských služeb. Umožňuje automatizaci rezidentního a abonentního parkování, kontrolu pomocí kamer, správu poplatků i integraci s ekonomickými systémy a registry.",
+        "work": "Vývoj a údržba frontendové části platformy. Implementace nových funkcí, vylepšení uživatelského rozhraní a spolupráce na jednotlivých modulech – od elektronické evidence parkovacích oprávnění přes kontrolu parkování až po reportování přestupků.",
         "technologies": "Angular, RxJS, PrimeNG, Typescript"
       },
-      "ssgh": {
+     "ssgh": {
         "name": "Aplikace pro SŠGH",
-        "description": "Interní aplikace pro školu SŠGH sloužící ke kontrole maturitních prací a jejich hodnocení.",
-        "work": "Vývoj uživatelského rozhraní v Angularu. Tvorba přehledných tabulek, filtrování, validace vstupů a podpora školní administrativy.",
-        "technologies": "Angular, RxJS, PrimeNG, Typescript"
+        "description": "Interní webová aplikace pro správu a hodnocení maturitních prací na střední škole SŠGH. Umožňuje efektivní kontrolu, evidenci a opravy testů.",
+        "work": "Návrh a vývoj uživatelského rozhraní od nuly podle designu ve Figmě v Angularu. Vytvoření přehledných obrazovek pro hodnocení úloh, zobrazení správných řešení, přidávání komentářů a správu celého workflow. Součástí práce bylo také administrativní funkce včetně evidence a statistických přehledů.",
+        "technologies": "Figma, Angular, RxJS, PrimeNG, Typescript"
       }
     }
   },
@@ -155,7 +155,7 @@
     }
   },
   "footer": {
-    "title": "Kontaktujtě mě",
+    "title": "Kontaktujte mě",
     "rights": "© 2024 Všechna práva vyhrazena.",
     "iconsCredit": "Ikony od"
   },
