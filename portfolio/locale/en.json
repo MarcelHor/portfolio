@@ -10,10 +10,10 @@
     "seeMyCV": "See my CV"
   },
   "services": {
-    "title": "How Can I",
-    "title1": "Support",
-    "title2": "Your",
-    "title3": "Success?",
+    "title": "How",
+    "title1": "can I",
+    "title2": "help",
+    "title3": "you?",
     "serviceList": [
       {
         "title": "Software solutions",
@@ -44,6 +44,12 @@
         "position": "Freelancer",
         "company": "Self-employed",
         "details": "Working remotely on various projects."
+      },
+      {
+        "year": "2024 – PRESENT",
+        "position": "Frontend Developer",
+        "company": "PragoData a.s.",
+        "details": "Angular development on large-scale projects such as Smart4City and an internal system for managing and grading final high school exams."
       },
       {
         "year": "2023 – 2024",
@@ -118,6 +124,18 @@
         "description": "Bachelor thesis using a Raspberry Pi equipped with a number of sensors, a pump for irrigation and a camera for monitoring the plant. The web application allows visualization of the data, creation of timelapse videos and evaluation of plant health using AI.",
         "work": "Development of a complete system, integration of hardware and software, creation of AI models for plant health analysis.",
         "technologies": "React.js, Typescript, Node.js, Express.js, FFmpeg, Python, TensorFlow"
+      },
+      "s4c": {
+        "name": "Smart4City",
+        "description": "Comprehensive smart parking and city services management system. Enables automation of residential and business parking, camera-based occupancy monitoring, payment processing, and integration with economic systems and vehicle registries.",
+        "work": "Frontend development and maintenance of the platform. Implemented new features, improved the UI, and collaborated on modules such as electronic parking permit management, parking control, and violation processing.",
+        "technologies": "Angular, RxJS, PrimeNG, Typescript"
+      },
+      "ssgh": {
+        "name": "SŠGH Application",
+        "description": "Internal web application for managing and grading high school graduation exams at SŠGH. Supports efficient control, tracking, and evaluation of student tasks.",
+        "work": "Designed and developed the entire user interface from scratch using Figma and implemented it in Angular. Created intuitive screens for evaluating tasks, displaying correct answers, writing comments, and managing the full evaluation workflow. Also included administrative features such as tracking scores and generating statistics.",
+        "technologies": "Figma, Angular, RxJS, PrimeNG, Typescript"
       }
     }
   },

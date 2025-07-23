@@ -4,6 +4,8 @@ import neznamyVlastnik from '@/public/neznamy.png';
 import telekonference from '@/public/telekonference.png';
 import mapaKriminality from '@/public/policie.png';
 import tmobile from '@/public/tmobile.png';
+import ssgh from '@/public/ssgh.jpg';
+import s4c from '@/public/s4c.jpg';
 import FadeIn from "@/components/FadeIn";
 import {useTranslations} from "next-intl";
 import {Link} from "@/lib/navigation";
@@ -11,30 +13,40 @@ import {Link} from "@/lib/navigation";
 
 const projects = [
     {
-        title: 'Siprec',
-        slug: 'siprec',
-        image: tmobile,
+        title: 'items.s4c.name',
+        slug: 's4c',
+        image: s4c,
     },
     {
-        title: 'Neznamy-vlastnik',
+        title: 'items.ssgh.name',
+        slug: 'ssgh',
+        image: ssgh,
+    },
+    {
+        title: 'items.neznamy-vlastnik.name',
         slug: 'neznamy-vlastnik',
         image: neznamyVlastnik,
     },
     {
-        title: 'Tritio Telekonference',
+        title: 'items.tritio-telekonference.name',
         slug: 'tritio-telekonference',
         image: telekonference,
     },
     {
-        title: 'Mapa kriminality Liberec',
+        title: 'items.siprec.name',
+        slug: 'siprec',
+        image: tmobile,
+    },
+    {
+        title: 'items.mapa-kriminality-liberec.name',
         slug: 'mapa-kriminality-liberec',
         image: mapaKriminality,
     },
     {
-        title: 'Inteligentní systém sledování rostlin',
+        title: 'items.inteligentni-system-sledovani-rostlin.name',
         slug: 'inteligentni-system-sledovani-rostlin',
         image: bp,
-    }
+    },
 ];
 
 export default function Projects() {
@@ -49,14 +61,14 @@ export default function Projects() {
                     <FadeIn
                         delay={(index + 1) * 0.1}
                         key={index}
-                        className={`mouse-hover relative group overflow-hidden ${index === 0 ? 'lg:row-span-2' : ''}`}
+                        className={`mouse-hover relative group overflow-hidden ${index === 0 || index === 4 ? 'lg:row-span-2' : ''}`}
                     >
                         <Link href={`/projects/${project.slug}`}>
                             <Image src={project.image} alt={project.title}
                                    className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110 rounded"/>
                             <div
                                 className="absolute inset-0 bg-primary bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
-                                <h2 className="text-xl font-bold uppercase">{project.title}</h2>
+                                <h2 className="text-xl font-bold uppercase">{t(project.title)}</h2>
                             </div>
                         </Link>
                     </FadeIn>

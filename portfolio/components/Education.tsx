@@ -2,19 +2,24 @@ import React from "react";
 import FadeIn from "@/components/FadeIn";
 import EducationItem from "@/components/EducationItem";
 import {useTranslations} from "next-intl";
+import tulLogo from '@/public/tul_logo.jpg';
+import gymplLogo from '@/public/gym-ul-logo.svg';
 
 const EducationContent = [
     {
+        img: tulLogo,
         year: "items.0.year",
         institution: "items.0.institution",
         details: "items.0.details"
     },
     {
+        img: tulLogo,
         year: "items.1.year",
         institution: "items.1.institution",
         details: "items.1.details"
     },
     {
+        img: gymplLogo,
         year: "items.2.year",
         institution: "items.2.institution",
         details: "items.2.details"

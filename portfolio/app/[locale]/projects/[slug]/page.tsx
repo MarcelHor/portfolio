@@ -5,6 +5,8 @@ import neznamyVlastnik from '@/public/neznamy.png';
 import telekonference from '@/public/telekonference.png';
 import mapaKriminality from '@/public/policie.png';
 import tmobile from '@/public/tmobile.png';
+import ssgh from '@/public/ssgh.jpg';
+import s4c from '@/public/s4c.jpg';
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -31,7 +33,15 @@ const projects = [
     {
         slug: 'inteligentni-system-sledovani-rostlin',
         image: bp,
-    }
+    },
+    {
+        slug: 's4c',
+        image: s4c,
+    },
+    {
+        slug: 'ssgh',
+        image: ssgh,
+    },
 ];
 
 export default function Project({params}: { params: { slug: string , locale: string }}) {
